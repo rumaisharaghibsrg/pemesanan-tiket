@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pemesanan Tiket</title>
+</head>
+<body>
+  <form>
+    <table  border="0" width="100%">
+      <tr>
+        <td colspan="2"><h2 align="center">Pemesanan Tiket</h2></td>
+      </tr>
+      <tr>
+        <td width="30%"><label for="username"><b>Nama Lengkap</b></label></td>
+        <td width="70%"><input type="text" id="username" name="username" placeholder="Masukkan Nama" style="width:96%;" required></td>
+      </tr>
+      <tr>
+        <td width="30%"><label for="email"><b>Email</b></label></td>
+        <td width="70%"><input type="email" id="email" name="email" placeholder="Masukkan Email" style="width:96%;" required></td>
+      </tr>
+      <tr>
+        <td width="30%"><label for="email"><b>No. Telepon</b></label></td>
+        <td width="70%"><input type="tel" id="telepon" name="telepon" placeholder="Masukkan Nomor Telepon"pattern="[0-9]{10,13}" style="width:96%;" required></td>
+      </tr>
+      <tr>
+        <td width="30%"><b>Destinasi</b></td>
+        <td width="70%">
+        <select name="jenjang" style="width:97%; padding:4px;">
+        <option value="pilih jenjang">--Pilih Destinasi--</option>
+        <option value="padang">Padang</option>
+        <option value="aek loba">Aek Loba</option>
+        <option value="pematang siantar"> Pematang Siantar</option>
+        <option value="prapat">Prapat</option>
+        <option value="pekanbaru"> Pekanbaru </option>
+        <option value="banda aceh"> Banda Aceh </option>
+        </select>
+        </td>
+      </tr>
+      <tr>
+        <td width="30%"><label for="date"><b>Tanggal Berangkat</b></label></td>
+        <td width="70%"><input type="date" id="date" name="date" placeholder="Pilih Tanggal Berangkat" style="width:96.5%;" required></td>
+      </tr>
+      <tr>
+        <td width="30%"><label for="jam"><b>Waktu Berangkat</b></label></td>
+        <td width="70%"><input type="time" id="jam" name="jam" placeholder="Pilih Waktu Berangkat" style="width:96.5%;" required></td>
+      </tr>
+      <tr>
+        <td width="30%"><label for="jumlah_penumpang"><b>Jumlah Penumpang</b></label></td>
+        <td width="70%"><input type="number" id="jumlah_penumpang" name="jumlah_penumpang" 
+        placeholder="Pilih Jumlah Penumpang" style="width:96%;" min="1" required></td>
+      </tr>
+      <tr>
+        <td width="30%">
+        <label class="field-label"><b>Pilihan Armada</b></label></td>
+        <td width="70%"><input type="radio" id=" Mobil_Hiace" name="armada" value="Mobil_Hiace">
+        <label for="Mobil_Hiace">Mobil Hiace</label><br>
+        <input type="radio" id="Bus_Laksana" name="armada" value="Bus_Laksana">
+        <label for="Bus_Laksana">Bus Laksana</label><br>
+        <input type="radio" id="ELF" name="armada" value="ELF">
+        <label for="ELF">ELF</label>
+        </td>
+      </tr>
+      <tr>
+        <td width="30%"><b>Layanan Tambahan</b></td>
+        <td width="70%">
+        <input type="checkbox" name="layanan" value="makanan">Makanan<br>
+        <input type="checkbox" name="layanan" value="Air_Mineral">Air Mineral<br>
+        <input type="checkbox" name="layanan" value="selimut">Selimut<br>
+      </tr>
+      <tr>
+        <td width="30%"><label for="ktp"><b>Upload Identitas (KTP)</b></label></td>
+        <td width="70%">
+        <input type="file" id="ktp" name="ktp" accept=".jpg,.jpeg,.png,.pdf" style="width:95%;" required>
+        </td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>
